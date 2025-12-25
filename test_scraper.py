@@ -12,13 +12,13 @@ def test_scanner_initialization():
     
     # Test headless mode
     scanner = ArkhamHorrorStoreScanner(headless=True)
-    assert scanner.headless == True
+    assert scanner.headless is True
     assert scanner.driver is None
     print("✓ Headless scanner initialized successfully")
     
     # Test non-headless mode
     scanner = ArkhamHorrorStoreScanner(headless=False)
-    assert scanner.headless == False
+    assert scanner.headless is False
     print("✓ Non-headless scanner initialized successfully")
 
 
